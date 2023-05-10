@@ -49,7 +49,7 @@ p {
 .nav__dot {
   list-style: none;
   position: fixed;
-  right: 0;
+  right: 5%;
   top: 50%;
   display: flex;
   flex-direction: column;
@@ -349,6 +349,11 @@ p {
 }
 .orginal__photograpy img {
   width: 183px;
+}
+@media screen and (min-width: 777px) {
+  .orginal__photograpy {
+    flex-wrap: nowrap;
+  }
 }
 
 .orginal__photograpy__bottom {

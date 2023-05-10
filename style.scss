@@ -42,7 +42,7 @@ p {
 .nav__dot {
   list-style: none;
   position: fixed;
-  right: 0;
+  right: 5%;
   top: 50%;
   @media screen and (min-width: 900px) {
     right: 19%;
@@ -309,7 +309,9 @@ p {
   img {
     width: 183px;
   }
-
+  @media screen and (min-width: 777px) {
+    flex-wrap: nowrap;
+  }
   display: flex;
   flex-wrap: wrap;
   align-items: center;
