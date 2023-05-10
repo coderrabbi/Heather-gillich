@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -54,7 +55,7 @@ p {
   flex-direction: column;
   gap: 4px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .nav__dot {
     right: 19%;
   }
@@ -226,6 +227,14 @@ p {
     align-items: center;
   }
 }
+@media screen and (min-width: 500px) {
+  .ellectric__vehicle__content img {
+    width: 400px;
+  }
+}
+.ellectric__vehicle__content img {
+  width: 250px;
+}
 .ellectric__vehicle__content p {
   margin-bottom: 20px;
   text-align: left;
@@ -245,6 +254,14 @@ p {
     justify-content: space-between;
     align-items: center;
   }
+}
+@media screen and (min-width: 500px) {
+  .poblanos__ad__content img {
+    width: 400px;
+  }
+}
+.poblanos__ad__content img {
+  width: 250px;
 }
 .poblanos__ad__content p {
   margin-bottom: 20px;
@@ -295,11 +312,16 @@ p {
   margin: 60px 0;
 }
 .middle__img img {
-  width: 400px;
+  width: 250px;
+}
+@media screen and (min-width: 500px) {
+  .middle__img img {
+    width: 400px;
+  }
 }
 
 .pb_img img {
-  width: 277px;
+  width: 250px;
 }
 
 .cover__design__container {
@@ -308,25 +330,25 @@ p {
 .cover__design__container h1 {
   margin-bottom: 20px;
 }
+@media screen and (min-width: 500px) {
+  .cover__design__container img {
+    width: 400px;
+  }
+}
 .cover__design__container img {
-  width: 408px;
+  width: 250px;
 }
 
 .orginal__photograpy {
   margin-bottom: 20px;
-  grid-template-columns: 1fr 1fr;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 .orginal__photograpy img {
   width: 183px;
-}
-@media screen and (min-width: 768px) {
-  .orginal__photograpy {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    display: grid;
-    gap: 0px;
-  }
 }
 
 .orginal__photograpy__bottom {
@@ -340,7 +362,9 @@ p {
 
 .new_york__img {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
 }
 .new_york__img img {
   width: 184px;
@@ -352,7 +376,9 @@ p {
 }
 
 .photograpy__grid__photo {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .photograpy__grid__photo img {
   width: 184px;
@@ -393,13 +419,23 @@ p {
 }
 @media screen and (min-width: 768px) {
   .digable__mobile {
-    display: flex;
     gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .margin__photo {
   margin-top: 10px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .margin__photo {
+    gap: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }/*# sourceMappingURL=style.css.map */
